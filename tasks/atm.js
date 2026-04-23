@@ -16,12 +16,8 @@ else{
   }
  else{
       let notes200 = Math.floor(withdrawal / 200);
-      let remainder = withdrawal % 200;
-      let notes100 = 0;
+      let notes100 = withdrawal % 200 / 100;
 
-      if(remainder > 0){
-        notes100 = remainder / 100;
-      }
       balance-=withdrawal;
 
     console.log(`200 Notes: ${notes200} 100 Notes: ${notes100}`);
